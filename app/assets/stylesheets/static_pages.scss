@@ -1,0 +1,93 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #CBCBCB;
+}
+
+.row-page-start {
+  margin-top: 30px;
+}
+
+.navbar-default {
+  background-color: black;
+  color: red;
+}
+
+.box-display {
+  padding: 50px;
+  text-align: center;
+}
+
+/*@-webkit-keyframes rotate {
+  from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    @-webkit-keyframes: rotate 4s 1s infinite linear alternate;
+    -moz-animation: Rotate 4s 1s infinite linear alternate;
+    -ms-animation: Rotate 4s 1s infinite linear alternate;
+    -o-animation: Rotate 4s 1s infinite linear alternate;
+    animation: Rotate 4s 1s infinite linear alternate;
+    }*/
+
+    .rotating {
+      height: 125px;
+      width: 125px;
+      background-color: #4185F4;
+      -webkit-animation-name: rotate;
+      -webkit-animation-duration: 4s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+
+      /*shorthand*/
+      /*-webkit-animation: rotate 4s infinite linear;*/
+    }
+
+    @-webkit-keyframes rotate {
+      from {-webkit-transform: rotate(0deg);}
+      to {-webkit-transform: rotate(360deg);}
+    }
+
+    .square-to-circle {
+      height: 125px;
+      width: 125px;
+      background-color: #4185F4;
+      -webkit-animation: to-circle 4s infinite linear;
+    }
+
+    @-webkit-keyframes to-circle {
+      0%    { border-radius: 0%; }
+      20%   { border-radius: 10%; }
+      40%   { border-radius: 20%; }
+      60%   { border-radius: 30%; }
+      80%   { border-radius: 40%; }
+      100%  { border-radius: 50%; }
+    }
+
+    .square-to-circle-and-back {
+      height: 125px;
+      width: 125px;
+      background-color: #4185F4;
+      -webkit-animation: to-circle-and-back 4s infinite linear;
+    }
+
+    @-webkit-keyframes to-circle-and-back {
+      0%    { border-radius: 0%; }
+      10%   { border-radius: 10%; }
+      20%   { border-radius: 20%; }
+      30%   { border-radius: 30%; }
+      40%   { border-radius: 40%; }
+      50%   { border-radius: 50%; }
+      60%   { border-radius: 40%; }
+      70%   { border-radius: 30%; }
+      80%   { border-radius: 20%; }
+      90%   { border-radius: 10%; }
+      100%  { border-radius: 0%; }
+    }
