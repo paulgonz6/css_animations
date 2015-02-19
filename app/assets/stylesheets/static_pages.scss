@@ -19,7 +19,6 @@ body {
 
 .box-display {
   padding: 50px;
-  text-align: center;
 }
 
 /*rotation ==================*/
@@ -38,8 +37,8 @@ body {
 }
 
 @-webkit-keyframes rotate {
-  from {-webkit-transform: rotate(0deg);}
-  to {-webkit-transform: rotate(360deg);}
+  from {-webkit-transform: rotate(360deg);}
+  to {-webkit-transform: rotate(0deg);}
 }
 
 /*square-to-circle ==================*/
@@ -71,15 +70,7 @@ body {
 
 @-webkit-keyframes to-circle-and-back {
   0%    { border-radius: 0%; }
-  10%   { border-radius: 10%; }
-  20%   { border-radius: 20%; }
-  30%   { border-radius: 30%; }
-  40%   { border-radius: 40%; }
   50%   { border-radius: 50%; }
-  60%   { border-radius: 40%; }
-  70%   { border-radius: 30%; }
-  80%   { border-radius: 20%; }
-  90%   { border-radius: 10%; }
   100%  { border-radius: 0%; }
 }
 
@@ -150,3 +141,49 @@ body {
   0%    { transform: translateY(50em); }
   100%  { transform: translateY(0em); }
 }
+
+/*text appear with blur==============*/
+
+.tumble-weed {
+  span:nth-child(odd) {
+    color: red;
+    /*-webkit-animation: rotate 1s 1 ease-in;*/
+    -webkit-animation: tumble 3s 1 ease-out;
+  }
+
+  span:nth-child(even) {
+    color: blue;
+  }
+}
+
+@-webkit-keyframes tumble {
+  0%    { transform: translateX(10em) rotate(360deg); }
+  100%  { transform: translateY(0em) rotate(0deg); }
+}
+
+/*bounce on hover===========*/
+
+.bouncey:hover {
+  -webkit-animation: bounce 1s infinite ease-out;
+}
+
+@-webkit-keyframes bounce {
+  0%    { transform: translateY(0em); }
+  50%   { transform: translateY(-.5em); }
+  100%  { transform: translateY(0em); }
+}
+
+.io-underline {
+  padding-bottom: 3px;
+  border-bottom: 2px solid rgba(0,0,0,0);
+}
+
+.io-underline:hover {
+  -webkit-animation: add-underline 30s linear forwards;
+}
+
+@-webkit-keyframes add-underline {
+  1%  { border-bottom: 2px solid #4185F4; }
+  100%  { border-bottom: 2px solid #4185F4; }
+}
+

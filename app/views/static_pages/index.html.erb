@@ -98,6 +98,48 @@
           <%= render 'menu_buttons_appear_snippet' %>
         </div>
       </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Title Entrance</h3>
+        </div>
+        <div class="panel-body text-center box-display">
+          <h1 class="tumble-weed">Changes opacity and enters</h1>
+        </div>
+        <hr/>
+        <div class="panel-body">
+          <%= render 'menu_buttons_appear_snippet' %>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Bounce on Hover</h3>
+        </div>
+        <div class="panel-body text-center box-display">
+          <h1 class="bouncey">Bouncey Text</h1>
+        </div>
+        <hr/>
+        <div class="panel-body">
+          <%= render 'menu_buttons_appear_snippet' %>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Underline from Inside Out on Hover (BROKEN)</h3>
+        </div>
+        <div class="panel-body text-center box-display">
+          <h1 class="io-underline">Inside Out Underline</h1>
+        </div>
+        <hr/>
+        <div class="panel-body">
+          <%= render 'menu_buttons_appear_snippet' %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function() {
+    $('.tumble-weed').lettering();
+  });
+</script>

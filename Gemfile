@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'rack-lettering', '~> 0.1.1'
 gem 'rails',                '4.2.0'
 gem 'sass-rails',           '5.0.1'
 gem 'uglifier',             '2.5.3'
